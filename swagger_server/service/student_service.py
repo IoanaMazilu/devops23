@@ -34,6 +34,7 @@ def get_by_id(student_id=None, subject=None):
 
 
 def delete(student_id=None):
+    print(student_id)
     student = student_db.get(doc_id=int(student_id))
     if not student:
         return 'not found', 404
